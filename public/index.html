@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Menu Management</h1>
+    <div class="form">
+      <label for="parentMenu">Parent Menu:</label>
+      <select id="parentMenu">
+        <option value="menu1">Menu 1</option>
+        <option value="menu2">Menu 2</option>
+        <option value="menu3">Menu 3</option>
+      </select>
+      <label for="menuName">Menu Name:</label>
+      <input type="text" id="menuName">
+      <label for="menuSlug">Menu Slug:</label>
+      <input type="text" id="menuSlug">
+      <button onclick="addMenu()">Submit</button>
+    </div>
+    <div class="menu-list">
+      <h2>Menus</h2>
+      <ul id="menus"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
